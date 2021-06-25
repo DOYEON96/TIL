@@ -45,3 +45,19 @@ $ git remote rm origin
 $ git push -u origin master
 ```
 
+- commit 내역이 없으면 불가능
+
+
+
+### clone
+
+- 원격 저장소 내용 전체 복귀
+
+```bash
+# $ git clone {원격 저장소 url}
+$ git clone https://github.com/DOYEON96/TIL.git
+```
+
+- 주의사항
+- 이미 git init 되어있으므로 다시 실행하지 않을 것
+
