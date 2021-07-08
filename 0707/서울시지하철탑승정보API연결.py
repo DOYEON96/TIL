@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 import pandas as pd
 
-user_key = 코드
+user_key = '4d46754e4c646f7934376e4342554e'
 url = 'http://openapi.seoul.go.kr:8088/'+user_key+'/xml/CardSubwayStatsNew/1/5/20151101'
 
 # 공공API

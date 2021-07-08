@@ -1,7 +1,7 @@
 import googlemaps
 
 
-user_Key=코드
+user_Key= #코드
 gmaps = googlemaps.Client(key=user_Key)
 
 sch = input("조회 기관명 입력 : ")

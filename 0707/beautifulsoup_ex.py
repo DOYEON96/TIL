@@ -53,3 +53,16 @@ print(soup.find('ul', class_="reply")) # class명이 reply인 ul 태그 값을 �
 print(soup.find_all('ul')) # soup 내의 모든 ul태그 값을 가져옴
 print(soup.find_all('ul')[-1]) # 인덱싱도 가능
 
+html_txt=soup.find_all('ul')
+print(html_txt[-1])
+
+# 태그를 제거하고 태그가 가지고 있는 텍스트 값 출력
+
+print(html_txt[-1].text)        # text 속성값 출력
+print(html_txt[-1].get_text())  # get_text() 함수 이용
+
+html_txt=soup.find_all('li')
+print(html_txt)
+
+for txt in html_txt:
+    print(txt.text)
