@@ -1,0 +1,13 @@
+url='https://www.opinet.co.kr/'
+driver=webdriver.Chrome('c:/pydata/chromedriver.exe')
+driver.get(url)
+time.sleep(2)
+driver.get('https://www.opinet.co.kr/searRgSelect.do')
+time.sleep(5)
+sido=driver.find_element_by_id("SIDO_NM0")
+sido.send_keys('부산')
+time.sleep(3)
+sido=driver.find_element_by_id("SIGUNGU_NM0")
+sido.send_keys('동래구')
+time.sleep(3)
+driver.find_element_by_xpath('//*[@id="glopopd_excel"]').click()
