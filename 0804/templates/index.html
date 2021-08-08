@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <h2> 플라스크 가상서버 연습용 </h2>
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit" value="submit">제출</button>
+    </form>
+
+    {% if fname %}
+        <p>fname</p>
+		<img src="{{ url_for('static', filename=fname) }}" width="700" height="700">
+	{% endif %}
+</body>
